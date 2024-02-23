@@ -1,0 +1,152 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: "Poppins", sans-serif;
+    background-color: aliceblue;
+}
+  
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 10px;
+    font-weight: 600;
+}
+#logo2{
+    display: none;
+}
+.nav_logo img{
+    height: 42px;
+    cursor: pointer;
+}
+.nav_catagory ul{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+.nav_catagory li{
+    cursor: pointer;
+}
+.nav_catagory a:hover{
+    color: red;
+    border-bottom: 2px solid red;
+    transition-duration: .3s;
+}
+.nav_filter{
+    display: flex;
+    gap: 30px;
+}
+.nav_filter i{
+    font-size: 20px;
+    cursor: pointer;
+}
+.sec_1{
+    display: flex;
+    justify-content: space-around;
+    background-color: red;
+    padding: 50px 0px;
+    padding-left: 60px;
+    margin-left: 5%;
+    margin-right: 3%;
+    border-radius: 20px;
+}
+.sec_1_left{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.sec_1_left h1{
+    font-size: 52px;
+    font-weight: 900;
+    color: white;
+}
+.sec_1_left_dec{
+    color: white;
+}
+.sec_1_left_btn{
+    border: 2px solid white;
+    width: fit-content;
+    padding: 7px 12px;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+}
+.sec_1_left_btn i{
+    background-color: white;
+    border-radius: 50%;
+    padding: 5px;
+    color: black;
+}
+.sec_1_right img{
+    float: right;
+    padding-right: 80px;
+    width: 60%;
+}
+@media screen and (max-width:1243px){
+    .sec_1_left h1{
+        font-size: 42px;
+    }
+}
+@media screen and (max-width:1100px){
+    .sec_1_left h1{
+        font-size: 32px;
+    }
+}
+@media screen and (max-width:945px){
+    .sec_1_right{
+        width: 50%;
+    }
+    .sec_1_right img{
+        float: right;
+        padding-right: 0px;
+        width: 80%;
+    }
+}
+@media screen and (max-width:900px)
+{
+    #logo2{
+        display: block;
+    }
+    #logo1{
+        display: none;
+    }
+    .nav_catagory{
+        display: none;
+    }
+    #search_icon{
+        display: none;
+    }
+    #shopping_cart{
+        display: none;
+    }
+    #side_nav{
+        display: block;
+    }
+    .nav_logo img{
+        height: 28px;
+    }
+}
+@media screen and (max-width:750px){
+    .sec_1{
+        flex-direction: column-reverse;
+        padding: 20px;
+        gap: 50px;
+        margin-right: 1%;
+    }
+    .sec_1_left{
+        width: 100%;
+    }
+    .sec_1_left_btn{
+        font-size: 12px;
+    }
+    .sec_1_right img{
+        float: none;
+        padding-right: 0px;
+        width: 100%;
+        margin-left: 40%;
+    }
+}
